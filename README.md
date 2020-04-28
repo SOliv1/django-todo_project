@@ -1,10 +1,13 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+Welcome Sara Oliver,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
 ## Gitpod Reminders
+
+To run django command in fullstack 
+`python3 manage.py runserver`
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
