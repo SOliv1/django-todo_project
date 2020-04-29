@@ -17,6 +17,7 @@ def create_an_item(request):
         if form.is_valid():
             form.save()
             return redirect(get_todo_list)
+
     else:
         form = ItemForm()
 
