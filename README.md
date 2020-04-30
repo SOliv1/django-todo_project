@@ -27,6 +27,13 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 ## tests
 go to tests.py
 
+*picks up on file*
+    names that start with the test (or test_) and
+    it will run all of the tests that they contain.
+    To do this
+    it will check all of those files for any methods that begin with
+    test_. 
+
 run tests with command:
 `python3 manage.py test`
 
