@@ -17,14 +17,8 @@ def create_an_item(request):
         if form.is_valid():
             form.save()
             return redirect(get_todo_list)
+    
+    else:
+        form = ItemForm()
 
-    def create_an_item(request):
-        if request.method == "POST":
-            new_item = Item()
-            new_item.name = request.POST.get('name')
-            new_item.done = 'done' in request.POST
-            new_item.save()
-
-        return redirect(get_todo_list)
-
-    return render(request, "item_form.html")
+    return render(request, "item_form.html", {'form': form})
