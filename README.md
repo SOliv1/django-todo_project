@@ -34,25 +34,23 @@ go to tests.py
     it will check all of those files for any methods that begin with
     test_. 
 
-run tests with command:
+To run tests with command in django:
 `python3 manage.py test`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Install and use coverage command:
+`pip3 install coverage` 
+run coverage command:
+`coverage run --source=todo manage.py test`
+runa coverage report:
+`coverage report`
+`coverage html`
+Create folder for coverage html-creates a folder 
+rage HTML command actually generates a new folder
+called htmlcov and inside of that, a file called
+index.html and run this file then and open it in the browser and it
+will actually give an HTML output of our coverage and we can see then
+we click on these files and we can see any lines here that actually haven't been
+covered by our tests will be highlight.
 
 `python3 -m http.server`
 
