@@ -9,7 +9,43 @@ This is the Code Institute student template for Gitpod. We have preinstalled all
 To run django command in fullstack 
 `python3 manage.py runserver`
 
+## django
+1.  What command do we need to run to create a new Django project?
+django-admin startproject .
+
+1.  What does the . signify in the startproject command?
+Create the project in this directory  
+
+1.  What class did we extend in order to create the form?
+forms.ModelFormcorrect
+
+1.  python3 manage.py migrate command will
+use the migration files to apply changes to a database
+
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+
+## tests
+go to tests.py
+
+run tests with command:
+`python3 manage.py test`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 `python3 -m http.server`
 
