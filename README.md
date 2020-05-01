@@ -51,7 +51,17 @@ index.html and run this file then and open it in the browser and it
 will actually give an HTML output of our coverage and we can see then
 we click on these files and we can see any lines here that actually haven't been
 covered by our tests will be highlight.
-`
+
+## Heroku platform and installing project requirements. 
+`pip3 install gunicorn`
+ 
+`pip3 install psycopg2`  - allows us to connect PostgreSQL database so instead of using MySQL or SQLite for this we'll be
+using a Postgres database and the reason for this is that Postgres is very
+easy to setup on Heroku to really encourage it we can get it up.
+
+`heroku create`
+
+`git remote -v`
 
 A blue button should appear to click: *Make Public*,
 
