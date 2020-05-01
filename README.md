@@ -51,8 +51,7 @@ index.html and run this file then and open it in the browser and it
 will actually give an HTML output of our coverage and we can see then
 we click on these files and we can see any lines here that actually haven't been
 covered by our tests will be highlight.
-
-`python3 -m http.server`
+`
 
 A blue button should appear to click: *Make Public*,
 
