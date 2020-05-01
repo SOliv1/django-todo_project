@@ -63,7 +63,35 @@ easy to setup on Heroku to really encourage it we can get it up.
 
 `git remote -v`
 
-A blue button should appear to click: *Make Public*,
+`heroku help` view help info
+
+`heroku addons` Allows us to create and manage addons for applications using this command.
+`heroku addons:create heroku-postgresql:hobby-dev`
+
+`dj_database_url`connects to out database A package that parses database URIs
+by installing it and referencing it in the settings.py file
+
+`pip3 --freeze local > requirements.txt`
+
+`config vars`to view dashboard url
+
+settings.py then copy and paste configs string from heroku config vars reveal, and import dj_database_url
+return to terminal and command:
+`python3 manage.py migrate`
+
+my migration should now be applied and there we go we've successfully connected
+to a Postgres database hosted on heroku
+through Django
+
+Debugging
+`heroku config:set DEBUG_COLLECTSTATIC=1`
+
+Disabling Collectstatic
+`heroku config:set DISABLE_COLLECTSTATIC=1`
+
+fully disables the collectstatic step of the build.
+
+----
 
 Another blue button should appear to click: *Open Browser*.
 
