@@ -53,7 +53,7 @@ we click on these files and we can see any lines here that actually haven't been
 covered by our tests will be highlight.
 
 ## Heroku platform and installing project requirements. 
-`pip3 install gunicorn`
+`pip3 install gunicorn` -the server that will run our project
  
 `pip3 install psycopg2`  - allows us to connect PostgreSQL database so instead of using MySQL or SQLite for this we'll be
 using a Postgres database and the reason for this is that Postgres is very
@@ -61,17 +61,25 @@ easy to setup on Heroku to really encourage it we can get it up.
 
 `heroku create`
 
+`heroku login`
+
+`heroku apps`
+
 `git remote -v`
 
 `heroku help` view help info
 
+`git push origin master`  push to github && heroku
+`git push heroku master`
+
 `heroku addons` Allows us to create and manage addons for applications using this command.
 `heroku addons:create heroku-postgresql:hobby-dev`
 
-`dj_database_url`connects to out database A package that parses database URIs
+`pip3 install dj_database_url`connects to out database A package that parses database URIs
 by installing it and referencing it in the settings.py file
 
-`pip3 --freeze local > requirements.txt`
+`pip3 freeze --local > requirements.txt`
+
 
 `config vars`to view dashboard url
 
@@ -90,6 +98,29 @@ Disabling Collectstatic
 `heroku config:set DISABLE_COLLECTSTATIC=1`
 
 fully disables the collectstatic step of the build.
+
+run development server
+`python3 manage.py runserver $IP:$PORT`
+Export development
+`export DEVELOPMENT=1`
+run development server again
+
+
+#Then git status then git add then git commit -m ""
+`git status`
+`git add django_todo/settings.py` 
+`git commit` -m "git
+commit -m I would say implement environments specific values for the
+debug and database"
+
+https://miniwebtool.com/django-secret-key-generator/  SECRET_KEY generator
+
+#assign one to env.py and the other to Heroku:
+
+*export "SECRET_KEY" = ''
+*secret key has been et on both our development department and our production environment on Heroku
+
+`heroku config:set SECRET_KEY=`
 
 ----
 

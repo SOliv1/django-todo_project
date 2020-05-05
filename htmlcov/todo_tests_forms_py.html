@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for todo/tests_forms.py: 100%</title>
+    <title>Coverage for todo/tests_forms.py: 50%</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="jquery.hotkeys.js"></script>
@@ -17,13 +17,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>todo/tests_forms.py</b> :
-            <span class="pc_cov">100%</span>
+            <span class="pc_cov">50%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             10 statements &nbsp;
-            <span class="run shortkey_r button_toggle_run">10 run</span>
-            <span class="mis show_mis shortkey_m button_toggle_mis">0 missing</span>
+            <span class="run shortkey_r button_toggle_run">5 run</span>
+            <span class="mis show_mis shortkey_m button_toggle_mis">5 missing</span>
             <span class="exc show_exc shortkey_x button_toggle_exc">0 excluded</span>
         </h2>
     </div>
@@ -58,20 +58,20 @@
     <p id="t5" class="run"><span class="n"><a href="#t5">5</a></span><span class="t"><span class="key">class</span> <span class="nam">TestToDoItemForm</span><span class="op">(</span><span class="nam">TestCase</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t6" class="pln"><span class="n"><a href="#t6">6</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t7" class="run"><span class="n"><a href="#t7">7</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_can_create_an_item_with_just_a_name</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t">        <span class="nam">form</span> <span class="op">=</span> <span class="nam">ItemForm</span><span class="op">(</span><span class="op">{</span><span class="str">'name'</span><span class="op">:</span> <span class="str">'Create Tests'</span><span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t9" class="run"><span class="n"><a href="#t9">9</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">is_valid</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t8" class="mis show_mis"><span class="n"><a href="#t8">8</a></span><span class="t">        <span class="nam">form</span> <span class="op">=</span> <span class="nam">ItemForm</span><span class="op">(</span><span class="op">{</span><span class="str">'name'</span><span class="op">:</span> <span class="str">'Create Tests'</span><span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t9" class="mis show_mis"><span class="n"><a href="#t9">9</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">is_valid</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t10" class="pln"><span class="n"><a href="#t10">10</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t11" class="run"><span class="n"><a href="#t11">11</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_correct_message_for_missing_name</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">        <span class="nam">form</span> <span class="op">=</span> <span class="nam">ItemForm</span><span class="op">(</span><span class="op">{</span><span class="str">'form'</span><span class="op">:</span> <span class="str">''</span><span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertFalse</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">is_valid</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">errors</span><span class="op">[</span><span class="str">'name'</span><span class="op">]</span><span class="op">,</span> <span class="op">[</span><span class="str">u'This field is required.'</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="mis show_mis"><span class="n"><a href="#t12">12</a></span><span class="t">        <span class="nam">form</span> <span class="op">=</span> <span class="nam">ItemForm</span><span class="op">(</span><span class="op">{</span><span class="str">'form'</span><span class="op">:</span> <span class="str">''</span><span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="mis show_mis"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertFalse</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">is_valid</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t14" class="mis show_mis"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">form</span><span class="op">.</span><span class="nam">errors</span><span class="op">[</span><span class="str">'name'</span><span class="op">]</span><span class="op">,</span> <span class="op">[</span><span class="str">u'This field is required.'</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t15" class="pln"><span class="n"><a href="#t15">15</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
-            created at 2020-04-30 22:40
+            created at 2020-05-04 21:59
         </p>
     </div>
 </div>
