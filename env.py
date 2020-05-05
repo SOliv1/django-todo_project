@@ -4,7 +4,6 @@ os.environ.setdefault("DATABASE_URL", 'postgres://rnpgrrywlytvev:fa774b99df8b21f
 os.environ.setdefault("SECRET_KEY", 'f0w+1d%a)o2_$(5p!t@xhmyy=&nubl*pvq(h^@bh%g42mk2^!0'),
 os.environ.setdefault("HOSTNAME", 'sjo-django-todo.herokuapp.com/'),
 os.environ.setdefault("HOST", 'localhost:127.0.0.1'),
-
-export "DEVELOPMENT" = '1',
-export "DEBUG" = '1',
-export "SECRET_KEY" = 'n3a#azz#km5ckcsiyxudcfs+b08-xxe&mgp-7@m#@%g80ho=_-',
+os.environ.setdefault("DEVELOPMENT", '1'),
+os.environ.setdefault("DJANGO_DEBUG", '1'),
+os.environ.setdefault("SECRET_KEY", 'n3a#azz#km5ckcsiyxudcfs+b08-xxe&mgp-7@m#@%g80ho=_-'),

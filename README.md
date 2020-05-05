@@ -10,7 +10,8 @@ To run django command in fullstack
 `python3 manage.py runserver`
 
 ## django
-1.  What command do we need to run to create a new Django project?
+1.  What command do we need to 
+run to create a new Django project?
 django-admin startproject .
 
 1.  What does the . signify in the startproject command?
@@ -104,7 +105,7 @@ run development server
 Export development
 `export DEVELOPMENT=1`
 run development server again
-
+echo "env.py" >> .gitignore
 
 #Then git status then git add then git commit -m ""
 `git status`
@@ -121,7 +122,11 @@ https://miniwebtool.com/django-secret-key-generator/  SECRET_KEY generator
 *secret key has been et on both our development department and our production environment on Heroku
 
 `heroku config:set SECRET_KEY=`
+echo "env.py" >> .gitignore
 
+ls -a 
+nano .gitignore
+git status
 ----
 
 Another blue button should appear to click: *Open Browser*.
