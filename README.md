@@ -4,7 +4,22 @@ Welcome Sara Oliver,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+
+# Django Fullstack Frameworks - Heavy Duty
+
+The Django framework comes with much more features and functionality out of the box than a
+framework like flask which is why we usually refer to *Django as a framework that
+comes with batteries included*. Django follows a strict pattern called **Model
+View Template. Template** being the HTML or the presentation layer. The *View* layer
+being the logic that provides the templates with the context users will be
+viewing. Models are the data *models* that we use to *model* our data.
+We will be using Django to look at the MVC style pattern, which is where MVT (Model View Template) pattern comes from.
+MVT is a child of MVC. We will be connecting all the different aspects of the MVC pattern
+together so we start with the models - we'll be getting data from the models
+and doing some form of manipulation with it in the view and then
+presenting it to a user. And then getting information from a template to a view to
+a database. We'll be looking at ranked using Django's built in *admin* panel.
+
 
 To run django command in fullstack 
 `python3 manage.py runserver`
@@ -129,6 +144,7 @@ nano .gitignore
 git status
 ----
 
+tpod Reminders
 Another blue button should appear to click: *Open Browser*.
 
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
