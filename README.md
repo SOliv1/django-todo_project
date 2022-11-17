@@ -1,5 +1,7 @@
 [![Django CI](https://github.com/SOliv1/django-todo_project/actions/workflows/django.yml/badge.svg)](https://github.com/SOliv1/django-todo_project/actions/workflows/django.yml)
 
+[![Build Status](https://app.travis-ci.com/SOliv1/django-todo_project.svg?branch=master)](https://app.travis-ci.com/SOliv1/django-todo_project)
+
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
 View the live site [HERE](https://sjo-django-todo.herokuapp.com/)
